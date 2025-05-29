@@ -1,0 +1,269 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háblamelo</title>
+    <link rel="icon" type="img/jpg" href="img/icon.jpg">
+    <script src="https://kit.fontawesome.com/16bf2b39ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/!main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/stile.css">
+    <link rel="stylesheet" href="/css/carru.css">
+    <link rel="stylesheet" href="/css/indexc.css">
+    <link rel="stylesheet" href="/css/music.css">
+    <link rel="stylesheet" href="/css/conocer.css">
+    <link rel="stylesheet" href="/css/destaca.css">
+    <script src="Backend/galeria.js"></script>
+    <script src="https://kit.fontawesome.com/16bf2b39ba.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <!-- Logo y eslogan a la izquierda -->
+            <div class="logo">
+                <a href="index.html">
+                    <h1>HÁBLAMELO</h1>
+                    <p>EL DICCIONARIO DEL PARCHE COLOMBIANO</p>
+            </div>
+
+            <!-- Menú a la derecha -->
+            <div class="menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="diccionario.html">Diccionario</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </div>
+
+        </div>
+    </header>
+    <section class="wave" id="wave">
+        <!-- Contenedor principal con imagen de fondo -->
+        <div class="hero-with-overlay">
+            <!-- Contenido superpuesto -->
+            <div class="hero-content">
+                <h2 class="hero-title">Conoce Nuevas Palabras</h2>
+
+                <!-- Buscador grande -->
+                <div class="big-search">
+                    <input type="text" placeholder="Buscar palabras colombianas..." class="big-search-input">
+                    <button class="big-search-button">Buscar</button>
+                </div>
+            </div>
+            <!-- Ola en la parte inferior -->
+            <div class="wa" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.00,50.10 C150.00,150.33 349.20,-50.10 500.00,50.10 L500.00,150.33 L-0.00,150.33 Z"
+                        style="stroke: none; fill: #dbd9d9;"></path>
+                </svg>
+            </div>
+    </section>
+    <main>
+        <section class="contendor textos-header">
+            <h2>Este diccionario permitira conocer las palabras más coloquiales de Colombia</h2>
+            <div class="contenedor-index">
+                <img src="img/meme_index.webp" alt="meme_index" class="img-index">
+                <div class="contenido-textox">
+                    <h3>¿Qué es el diccionario "HÁBLAMELO"?</h3>
+                    <p>El diccionario "HÁBLAMELO" es una herramienta diseñada para ayudar a las personas a entender y
+                        aprender sobre las palabras y expresiones coloquiales que se utilizan en Colombia. Este
+                        diccionario
+                        es especialmente útil para aquellos que no son nativos de Colombia y desean conocer más sobre la
+                        cultura y el idioma del país.</p>
+                    <br>
+                    <p>En este diccionario no solo encontrara palabras, sino tambien encontrara datos de fierentes
+                        regiones, como la región
+                        Andina, la región Caribe, la región Pacífica, la región Insular y la región Amazonica. Asimismo,
+                        se podra enterar de lo ultimo
+                        en información del pais, escuchar musica de cada región y conocer un poco mas de cada cultura.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Tarjeta para las palabras destacadas -->
+        <div class="destacadas">
+            <h2 class="titulo">Palabras Destacadas</h2>
+            <div class="slide">
+                <div class="item" style="background-image: url(./img/chimba.jpeg);">
+                    <div class="content">
+                        <div class="name">Chimba</div>
+                        <div class="des">Descubra el significado de esta palabra</div>
+                        <button class="mas">Ver más</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/mecato.jpg);">
+                    <div class="content">
+                        <div class="name">Mecato</div>
+                        <div class="des">Descubra el significado de esta palabra</div>
+                        <a href="diccionario.html#slang-mecato">
+                        <button class="mas">Ver más</button></a>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./img/ñero.jpg);">
+                    <div class="content">
+                        <div class="name">ñero</div>
+                        <div class="des">Descubra el significado de esta palabra</div>
+                        <button class="mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- Sección para Consumo de API -->
+        <section class="api-consum"><!-- clientes contenedor-->
+            <h2 class="titulo">Conocer de Colombia</h2>
+            <div class="cardes-index"><!--cards-->
+                <div class="carde-index"><!--card-->
+                    <img src="img/mapa.jpg" alt="mapa">
+                    <div class="contenido-card-texto-card">
+                        <h4>Geografia colombiana</h4>
+                        <p class="saber">¿Desea conocer más de la georafia colombaia y sus maravillas? Dele click al
+                            botón para saber
+                            más</p>
+                        <button onclick="window.location.href= 'https://www.google.com/maps/place/Colombia/@5.820172,-85.0121747,5z/data=!3m1!4b1!4m6!3m5!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340!8m2!3d4.570868!4d-74.297333!16zL20vMDFsczI?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D'">Conocer más</button>
+                    </div>
+                </div>
+                <div class="carde-index">
+                    <img src="img/natural.jpg" alt="naturaleza">
+                    <div class="contenido-card-texto-card">
+                        <h4>Conocer La fauna y Flora</h4>
+                        <p class="saber">Si desea saber mas sobre la riqueza natural de este pais, dele click al
+                            botón,
+                            por favor</p>
+                        <button onclick="window.location.href= 'https://www.youtube.com/watch?v=Y2IVAKzlNBA'">Conocer más</button>
+                    </div>
+                </div>
+                <div class="carde-index">
+                    <img src="img/turista.jpg" alt="turista">
+                    <div class="contenido-card-texto-card">
+                        <h4>Planes Turistas</h4>
+                        <p class="saber">¡Hey, Turistas! ¿Visitan Colombia y no saben pa' donde ir? Don't worry, acá
+                            le
+                            presentamos
+                            lugares que no se debe perder por nada del mundo</p>
+                        <button onclick="window.location.href= 'https://www.viator.com/es-ES/Colombia/d4497-ttd?m=27910&supag=1235852172577242&supsc=kwd-77241141776767&supai=77240896088480&supdv=c&supnt=nt:o&suplp=142124&supli=43&supti=kwd-77241141776767&tsem=true&supci=kwd-77241141776767&supkw=planes%20tur%C3%ADsticos%20en%20colombia&&msclkid=3b1e75b66909108c81f31d80e4d58458&gclid=3b1e75b66909108c81f31d80e4d58458&gclsrc=3p.ds&gad_source=7'">Conocer más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Musica de las regiones colombianas</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/andina.jpg" alt="andina">
+                        <div class="hover-galeria">
+                            <h3>Region Andina</h3>
+                            <p>Escuche la musica de la región Andina</p>
+                            <a href="https://open.spotify.com/playlist/5YkupFAQdP9Wmu639fEnsi?si=WJNC86r3SEuGB8jrZGfbYA"
+                                target="andina">
+                                <button class="music" id="caribe">Escuchar</button></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/caribe.png" alt="caribe">
+                        <div class="hover-galeria">
+                            <h3>Region Caribe</h3>
+                            <p>Escuche la musica de la región Caribe</p>
+                            <a href="https://open.spotify.com/playlist/01BCQDMIo8MXnBZS2WzQOK?si=91643365020a48fb" target="caribe">
+
+                            <button class="music" id="caribe">Escuchar</button>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/insular.png" alt="Insular">
+                        <div class="hover-galeria">
+                            <h3>Region Insular</h3>
+                            <p>Escuche la musica de la región Insular</p>
+                            <a href="https://open.spotify.com/playlist/3SU72fRHUPk5SQmq1gMRkd?si=17d61b82f35c4a8b" target="Insular">
+    
+                            <button class="music" id="insuar">Escuchar</button>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/pacifica.png" alt="Pacifica">
+                        <div class="hover-galeria">
+                            <h3>Region Pacifica</h3>
+                            <p>Escuche la musica de la región Pacifica</p>
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1DX1ywbRrraL4n?si=287a10b0a4b246e3" target="Pacifica"></a>
+                            <button class="music" id="pacifica">Escuchar</button>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/orinoquia.png" alt="Orinoquia">
+                        <div class="hover-galeria">
+                            <h3>Region Orinoquia</h3>
+                            <p>Escuche la musica de la región Orinoquia</p>
+                            <a href="https://open.spotify.com/playlist/5mxCV3n6hGTpk79S1Q9T5w?si=ed4391ee89084981" target="orinoquia">
+                            <button class="music" id="orinoqia">Escuchar</button>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/amazonica.png" alt="amazonia">
+                        <div class="hover-galeria">
+                            <h3>Region Amazonica</h3>
+                            <p>Escuche la musica de la región Amazonica</p>
+                            <a href="https://open.spotify.com/playlist/5lU5st21Bv0q7xOSNfCo1x?si=1c8a076bbd4f4d17" target="amazonica">
+                            <button class="music" id="andina">Escuchar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Parte del footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <!--Recomendacion de diccionario-->
+            <div class="footer-section">
+                <h3>HÁBLAMELO DICCIONARIO</h3>
+                <ul>
+                    <li><a href="diccionario.html">Palabras Nuevas</a></li>
+                    <li><a href="diccionario.html#slang-parce">Jerga Costeña</a></li>
+                    <li><a href="diccionario.html#slang-paisa">Jerga Paisa</a></li>
+                </ul>
+            </div>
+            <!-- Segunda columna: Recursos -->
+            <div class="footer-section">
+                <h3>CONOCE MÁS</h3>
+                <ul>
+                    <li><a href="blog.html">Blog de Jergas</a></li>
+                    <li><a href="api.html">Documentos</a></li>
+                    <li><a href="descargas.html">Guías Descargables</a></li>
+                </ul>
+            </div>
+            <!-- Tercera columna: Legal -->
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="cookies.html">Configuración de Cookies</a></li>
+                    <li><a href="terminos.html">Términos de Uso</a></li>
+                </ul>
+            </div>
+            <!-- Cuarta columna: Redes Sociales -->
+            <div class="footer-section">
+                <h3>CONÉCTATE</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Háblamelo - El Diccionario del Parche Colombiano. Todos los derechos reservados.</p>
+            <a href="#top" class="mobile-back-to-top back-to-top">Volver arriba ↑</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

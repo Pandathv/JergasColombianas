@@ -1,0 +1,116 @@
+
+/*musica*/
+.portafolio {
+    background-color: #d5d5c1d5;
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor principal */
+    padding: 0 20px; /* Añadir padding horizontal */
+}
+
+.titulo {
+    font-size: 2.5em;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.imagen-port {
+    width: 280px; /* Ancho fijo para cada tarjeta */
+    height: 280px; /* Alto fijo para cada tarjeta para que sean cuadradas */
+    overflow: hidden;
+    position: relative; /* Indispensable para posicionar el overlay */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    /* Añade una transición para el propio contenedor si deseas un efecto sutil al hacer hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-port:hover {
+    transform: translateY(-5px); /* Pequeño levantamiento al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    
+}
+
+.imagen-port img {
+    width: 100%;
+    height: 100%; /* La imagen ocupa todo el espacio del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;
+    transition: opacity 0.5s ease; /* Transición para la opacidad de la imagen */
+    position: relative;
+    z-index: 0; /* Asegura que la imagen esté detrás del overlay */
+    
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: hsla(226, 83%, 52%, 0.9); /* Fondo oscuro con transparencia */
+    color: white;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Transición para la opacidad del overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box; /* Asegura que el padding no desborde el tamaño */
+    z-index: 1; /* Asegura que el overlay esté por encima de la imagen */
+}
+
+/* Reglas de hover */
+.imagen-port:hover img {
+    opacity: 0; /* Oculta la imagen al hacer hover */
+    
+}
+
+.imagen-port:hover .hover-galeria {
+    opacity: 1; /* Muestra el contenido del hover al hacer hover */
+    
+}
+
+/* Estilos para el texto y botón dentro de hover-galeria */
+.hover-galeria h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+.hover-galeria p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+.hover-galeria button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Color oro */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.hover-galeria button:hover {
+    background-color: #800000; /* Tono más oscuro de oro al hacer hover */
+    color: white;
+}
+

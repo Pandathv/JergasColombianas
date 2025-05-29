@@ -1,0 +1,239 @@
+
+.big-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.big-search-input {
+    padding: 15px 25px;
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 50px 0 0 50px;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.big-search-button {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.big-search-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+    /*Estilos para el apartado del diccionario*/
+    .banner2 {
+        border-bottom: solid 1px black;
+        margin: 0 50px;
+    }
+
+    .titulo {
+        text-align: center;
+        /*Esto es para que el texto se alinee al centro*/
+        font-size: normal;
+        /*Tamaño del texto*/
+        font-weight: 200;
+        /*Esto es para que el texto no sea tan grueso*/
+        color: black;
+        /*Color del texto*/
+        margin-top: 10px;
+        /*Espacio entre el banner y el texto*/
+        font-family: 'Rye', cursive;
+        /*Tipo de letra*/
+        letter-spacing: 5px;
+        /*Espacio entre las letras*/
+    }
+
+    .subtitulo {
+        text-align: center;
+        /*Esto es para que el texto se alinee al centro*/
+        font-size: normal;
+        /*Tamaño del texto*/
+        font-weight: 200;
+        /*Esto es para que el texto no sea tan grueso*/
+        color: black;
+        /*Color del texto*/
+        margin-top: 20px;
+        /*Espacio entre el banner y el texto*/
+        font-family: 'Times New Roman', Times, serif;
+        /*Tipo de letra*/
+        letter-spacing: 2px;
+        /*Espacio entre las letras*/
+    }
+
+    /*Esto sera el estilo que tendran las tarjetas especificas para el apartado de diccionario*/
+    .container {
+        display: flex;
+        /*Esto es para que las tarjetas se alineen una al lado de la otra*/
+        justify-content: center;
+        /*Esto es para que se alineen al centro*/
+        min-height: 100vh;
+        /*Esto es para que la tarjeta ocupe todo el alto de la pantalla*/
+        gap: 40px;
+        /*Esto es para el espacio entre cada tarjeta*/
+        flex-wrap: wrap;
+        /*Esto es para que las tarjetas se alineen una al lado de la otra*/
+    }
+
+    .card {
+        position: relative;
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+        width: 300px;
+        /*Ancho de la tarjeta*/
+        height: 400px;
+        /*Alto de la tarjeta*/
+        margin: 20px;
+        /*Espacio entre la tarjeta y el banner*/
+    }
+
+    .card .face {
+        position: absolute;
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+        width: 100%;
+        /*Ancho de la tarjeta*/
+        height: 100%;
+        /*Alto de la tarjeta*/
+        backface-visibility: hidden;
+        /*Esto es para que la parte de atras de la tarjeta no se vea*/
+        border-radius: 10px;
+        /*Esto es para que las esquinas de la tarjeta sean redondeadas*/
+        overflow: hidden;
+        /*Esto es para que no se vea lo que sale de la tarjeta*/
+        transition: all 0.5s ease;
+        /*Esto es para que el efecto no sea tan brusco*/
+    }
+
+    .card .front {
+        transform: perspective(600px) rotateY(0deg);
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+        box-shadow: 0px 5px 10px #000000;
+        /*Esto es para que la tarjeta tenga una sombra*/
+    }
+
+    .card .front img {
+        position: absolute;
+        /*Esto es para que la imagen se ajuste a la tarjeta*/
+        width: 100%;
+        /*Ancho de la tarjeta*/
+        height: 100%;
+        /*Alto de la tarjeta*/
+        object-fit: cover;
+        /*Esto es para que la imagen se ajuste a la tarjeta*/
+        filter: opacity(0.5);
+        /*Esto es para que la imagen se vea un poco borrosa*/
+    }
+
+    .card .front .name {
+        position: absolute;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        top: 50%;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        left: 50%;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        transform: translate(-50%, -50%);
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        color: rgb(7, 7, 7);
+        /*Color del texto*/
+        font-size: 2em;
+        /*Tamaño del texto*/
+        text-align: center;
+        /*Alineacion del texto*/
+    }
+
+    .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+        background-color:  #ad9898d3;
+        /*Color de fondo de la tarjeta*/
+        /*Espacio entre el texto y la tarjeta*/
+        color: black;
+        /*Color del texto*/
+        display: flex;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        flex-direction: column;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        justify-content: space-between;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        text-align: center;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        box-shadow: 0px 5px 10px #000000;
+        /*Esto es para que la tarjeta tenga una sombra*/
+    }
+
+    .card .back .description {
+        font-size: 1.5em;
+        /*Tamaño del texto*/
+        margin: 20px;
+        /*Espacio entre el texto y la tarjeta*/
+        letter-spacing: 2px;
+        /*Espacio entre las letras*/
+    }
+
+    .card .back .example {
+        font-size: 1.2em;
+        /*Tamaño del texto*/
+        margin: 0;
+        /*Espacio entre el texto y la tarjeta*/
+        letter-spacing: 1px;
+        /*Espacio entre las letras*/
+    }
+
+    .card .back .button-class {
+        display: flex;
+        /*Permite ocupar todo el espacio*/
+        justify-content: center;
+        /*Esto es para que el texto se ajuste a la tarjeta*/
+        width: 70%;
+        /*Ancho del boton*/
+        height: 70%;
+        /*Alto del boton*/
+        background: rgb(117, 49, 49);
+        /*Color del boton*/
+        color: white;
+        /*Color del texto*/
+        border: none;
+        /*Esto es para que no tenga borde*/
+        border-radius: 5px;
+        /*Esto es para que las esquinas del boton sean redondeadas*/
+        margin: 10px auto;
+        /*Espacio entre el texto y el boton*/
+        cursor: pointer;
+        /*Este permite cambiar la flecha por una manita en referencia boton*/
+        font-size: 1.2rem;
+        /*Esto es para el tamaño del texto*/
+        /*En este espacio agrego el efecto que tendra el boton*/
+        transition: all 0.5s ease;
+        /* Transición no sea tan agresiva*/
+    }
+
+    .card .back .button-class:hover {
+        /*Yo hice que el boton de ver mas direccione a una pagina diferente*/
+        background: rgba(255, 234, 0, 0.842);
+        transform: scale(1.05);
+        /*Esto es para que el boton se haga mas grande al pasar el boton*/
+        text-decoration: underline;
+        /*Esto es para que el texto se subraye al pasar el mouse*/
+    }
+
+    .card:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+    }
+
+    .card:hover .back {
+        transform: perspective(600px) rotateY(360deg);
+        /*Esto es para que la tarjeta tenga un efecto de elevacion*/
+    }

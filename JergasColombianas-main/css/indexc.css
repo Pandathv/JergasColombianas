@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.0em;
+}
+
+/*estilo para el texto que va a salir como home,referencia de guia: foto de uribe*/
+.contenedor-index {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 10%;
+    /* Espacio alrededor del contenedor */
+    gap: 3rem;
+    /* Espacio entre los elementos */
+}
+
+.img-index {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-textox h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    padding: 2px;
+}
+
+.contenido-textox p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: "winky sans", sans-serif;
+}
+

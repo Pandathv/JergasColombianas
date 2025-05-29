@@ -1,0 +1,133 @@
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/nosotros_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 5vw;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Este es un estilo de seccion alternadas entre nosotros y conocenos*/
+.nosotros{
+    background-color: #e7eaa6;
+    display: flex;
+    align-items: center;
+    padding: 5rem 10%;
+    gap: 3rem;
+}
+
+.nosotros.conocernos{
+    background-color: #aab8e7;
+}
+
+.nosotros-contenido{
+    flex: 1;
+}
+
+.nosotros-contenido h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-contenido p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nosotros-img{
+    flex: 1;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nosotros-img img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.nosotros-img:hover img{
+    transform: scale(1.05);
+}
+
+/*Apartado de objetivos*/
+.objetivos{
+    flex-direction: column;
+    text-align: center;
+}
+
+.objetivos-card{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #eabdbd;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 15vw;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/*Apartado de valores*/
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding:0 2rem;
+}
+
+.value-item {
+    background: rgba(255, 204, 0, 0.1); /* Amarillo bandera */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #003366;
+}
+
+.value-item h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/*Esto es para tener una animacion linda*/
+@media (max-width:768px){
+    .nosotros{
+        flex-direction: column;
+        padding: 3rem 5%;
+    }
+    .hero-content h1{
+        font-size: 2.5rem;
+    }
+}

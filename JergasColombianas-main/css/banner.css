@@ -1,0 +1,61 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: min(20px, 5%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 50px;
+    background-image: url('../img/banderaColombia.jpeg');
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.banner .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.banner .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(245, 249, 185, 0.683);
+}
+
+.banner .logo p {
+    margin: 0;
+    font-size: 1.0em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(198, 188, 250, 0.66);
+}
+
+.banner .logo h1::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-image: url(img/boca.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.banner .menu {
+    text-align: right;
+}
+
+.banner .menu a {
+    color: rgb(246, 241, 241);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.79);
+}
+
+.banner .menu a:hover {
+    text-decoration: underline;
+}

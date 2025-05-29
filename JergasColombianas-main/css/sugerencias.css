@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7ea;
+    margin: 0;
+    padding: 0;
+}
+
+.sugerencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sugerencias-contenido {
+    position: relative; /* Para que el texto quede encima */
+    max-width: 400px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    background-color: transparent; /* Quitamos el color de fondo */
+    overflow: hidden; /* Para que la imagen no sobresalga */
+    color: rgb(255, 255, 255); /* Para que el texto contraste con la imagen */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sugerencias-contenido img.imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 0;
+    filter: brightness(0.7); /* Opcional: oscurece la imagen para resaltar texto */
+}
+
+.sugerencias-contenido h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.sugerencias-contenido h2,
+.sugerencias-contenido p {
+    position: relative;
+    z-index: 1; /* Para que el texto esté encima de la imagen */
+}
+
+.btn-sugerencia:hover {
+    background-color: #e68900;
+}
+
+#form-sugerencia {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+
+#form-sugerencia label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+#form-sugerencia input[type="text"],
+#form-sugerencia textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    resize: vertical;
+    font-family: arial, sans-serif;
+}
+
+#form-sugerencia input[type="submit"] {
+    background-color: #4c6baf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-sugerencia input[type="submit"]:hover {
+    background-color: #385a8e;
+}
+
+.form-visible {
+    display: block;
+}
+
+button[type="submit"] {
+
+    color: white;
+    background-color: #680404;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #003366;
+    color: #ffffff;
+}

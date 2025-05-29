@@ -1,0 +1,157 @@
+
+/* apartados turista y api */
+.api-consum {
+    margin: 0 auto;
+    padding: 5rem;
+    text-align: center;
+    /* Centra el título */
+    background-color: #dbd9d9;
+}
+
+.cardes-index {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* Espacio entre las tarjetas */
+    margin-top: 3rem;
+    /* Espacio entre el título de la sección y las tarjetas */
+    flex-wrap: wrap;
+}
+
+
+.carde-index {
+    /* Estilosindividual */
+    background: #F0E68C;
+    /* Color de fondo de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente */
+    border-radius: 10px;
+    padding: 1.5rem;
+    /* Padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+    /* Centra el texto dentro de la tarjeta en móvil */
+}
+
+.carde-index:hover {
+    transform: translateY(-10px);
+}
+
+.carde-index img {
+    /* Estilos para img */
+    width: auto;
+    /* La imagen ocupa todo el ancho */
+    height: 180px;
+    /* Altura fija para que no se vean grandes*/
+    object-fit: cover;
+    /* Recorta la imagen si es necesario */
+    border-radius: 8px;
+    border: solid 2px #FFD700;
+    margin-bottom: 1rem;
+    /* Espacio debajo de la imagen*/
+    margin-right: 0;
+    display: block;
+    flex-shrink: 0;
+    /* Evita que la imagen se encoja */
+}
+
+.carde-index .contenido-card-texto-card {
+    /* Estilos para el texto */
+    flex-grow: 1;
+    /* Permite que ocupe el espacio restante*/
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente el contenido de texto */
+    padding: 0 0.5rem;
+    /* Pequeño padding horizontal para el texto */
+    font-family: "Winky Sans", sans-serif;
+}
+
+.carde-index .contenido-card-texto-card h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3em;
+    color: #3a0303;
+}
+
+.carde-index .contenido-card-texto-card p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.carde-index .contenido-card-texto-card button {
+    align-self: center;
+    /* Centra el botón en móvil */
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.carde-index .contenido-card-texto-card button:hover {
+    background-color: #041151;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .carde-index {
+        flex-direction: row;
+        /*imagen y texto horizontalmente */
+        width: 600px;
+        height: 250px;
+        text-align: left;
+    }
+
+    .carde-index img {
+        margin-right: 1.5rem;
+        /* Espacio a la derecha de la imagen */
+        margin-bottom: 0;
+        /* Elimina el margen inferior*/
+        object-fit: cover;
+        /* Asegura que la imagen cubra el espacio */
+    }
+
+    .carde-index .contenido-card-texto-card {
+        text-align: left;
+        /* Asegura la alineación a la izquierda para el texto */
+        padding: 0;
+    }
+
+    .carde-index .contenido-card-texto-card button {
+        align-self: flex-start;
+        /* Alinea el botón a la izquierda */
+    }
+}
+
+@media (min-width: 1024px) {/* Pantallas grandes */
+    .carde-index {/* Estilo para tarjetas */
+        width: 40vw; 
+        height: auto; 
+    }
+    .carde-index img {/* Estilo para imagen */
+        width: auto;
+        height: 180px;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .carde-index .contenido-card-texto-card {
+        text-align: center;
+    }
+    .carde-index .contenido-card-texto-card button {
+        align-self: center;
+    }
+}

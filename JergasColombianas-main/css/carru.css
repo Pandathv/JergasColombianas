@@ -1,0 +1,85 @@
+/* Estilos para el carrusel de imágenes */
+.hero-with-overlay {
+    width: 100%;
+    height: 700px; /* Ajusta la altura*/
+    overflow: hidden;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+/* Contenido superpuesto */
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-title {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+/* Buscador grande */
+.big-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.big-search-input {
+    padding: 15px 25px;
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 50px 0 0 50px;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.big-search-button {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.big-search-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+/* Ola en la parte inferior */
+.wave {
+    position: relative;
+    width: 100%;
+    margin-top: -10px; /* Ajusta para superponer ligeramente */
+}
+
+.wa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}

@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Háblamelo</title>
+    <link rel="icon" type="img/jpg" href="img/icon.jpg">
+    <script src="https://kit.fontawesome.com/16bf2b39ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sugerencias.css">
+    <link rel="stylesheet" href="css/!main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/stile.css">
+    <link rel="stylesheet" href="Backend/galeria.js">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <!-- Logo y eslogan a la izquierda -->
+            <div class="logo">
+                <a href="index.html">
+                    <h1>HÁBLAMELO</h1>
+                    <p>EL DICCIONARIO DEL PARCHE COLOMBIANO</p>
+                </a>
+            </div>
+            <!-- Menú a la derecha -->
+            <div class="menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="diccionario.html">Diccionario</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="sugerencias">
+        <div class="sugerencias-contenido">
+            <img src="img/rodolfo-hernandez-voto.png" alt="Rodolfo" class="imagen">
+            <h2>¿Tienes una jerga colombiana para compartir?</h2>
+            <p>Ayúdanos a enriquecer nuestro diccionario con tus aportes.</p>
+        </div>
+
+        <form id="form-sugerencia">
+            <label for="nombre">Tu nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="jerga">Jerga colombiana:</label>
+            <textarea id="jerga" name="jerga" required></textarea>
+
+            <label for="significado">Significado / contexto:</label>
+            <textarea id="significado" name="significado" required></textarea>
+
+            <input type="submit" value="Enviar sugerencia">
+        </form>
+
+        <div id="mensaje-confirmacion" style="display: none; text-align: center; padding: 2rem; background-color: #d4edda; color: #155724; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+            <h3>¡Gracias por tu sugerencia!</h3>
+            <p>La hemos recibido y será revisada para su posible inclusión.</p>
+        </div>
+
+    </section>
+    <script src="Backend/sugerencias.js"></script>
+
+     <footer class="footer">
+        <div class="footer-content">
+            <!--Recomendacion de diccionario-->
+            <div class="footer-section">
+                <h3>HÁBLAMELO DICCIONARIO</h3>
+                <ul>
+                    <li><a href="diccionario.html">Palabras Nuevas</a></li>
+                    <li><a href="diccionario.html#slang-parce">Jerga Costeña</a></li>
+                    <li><a href="diccionario.html#slang-paisa">Jerga Paisa</a></li>
+                </ul>
+            </div>
+            <!-- Segunda columna: Recursos -->
+            <div class="footer-section">
+                <h3>CONOCE MÁS</h3>
+                <ul>
+                    <li><a href="blog.html">Blog de Jergas</a></li>
+                    <li><a href="api.html">Documentos</a></li>
+                    <li><a href="descargas.html">Guías Descargables</a></li>
+                </ul>
+            </div>
+            <!-- Tercera columna: Legal -->
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="cookies.html">Configuración de Cookies</a></li>
+                    <li><a href="terminos.html">Términos de Uso</a></li>
+                </ul>
+            </div>
+            <!-- Cuarta columna: Redes Sociales -->
+            <div class="footer-section">
+                <h3>CONÉCTATE</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Línea inferior -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Háblamelo - El Diccionario del Parche Colombiano. Todos los derechos reservados.</p>
+            <a href="#top" class="mobile-back-to-top back-to-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

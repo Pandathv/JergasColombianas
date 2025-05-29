@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos generales*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dbd9d9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('/img/banderaColombia.jpeg');
+    background-size: cover;  /* Asegura que la imagen cubra todo el banner */
+
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px  rgb(126, 174, 199); /* Sombra para el banner */  
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px ; /* Espacio entre el banner y el resto del contenido */
+    height: 200px; /* Ajusta la altura del banner según sea necesario */
+    overflow: hidden; /* Asegura que el pseudo-elemento no se salga del banner */
+}
+
+.banner::before {
+    content: ""; /* Necesario para mostrar el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1)  ; /* Capa blanca con opacidad */
+    z-index: 1; /* Coloca la capa debajo del contenido del banner */
+}
+
+.banner * {
+    position: relative; /* Asegura que el contenido del banner esté por encima de la capa blanca */
+    z-index: 2;
+}
+
+.banner .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    position: relative; /* Necesario para posicionar la imagen */
+}
+
+/* Estilo para el título "HÁBLAMELO" */
+.banner .logo h1 {
+    font-size: 2.5em; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace la letra más gruesa */
+    color: black; /* Asegura que el color sea visible */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Agrega un poco de sombra para resaltar */
+}
+
+.banner .logo p {
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace la letra más gruesa */
+    color: black; /* Asegura que el color sea visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Agrega un poco de sombra para resaltar */
+}
+
+/* Esto es para la imagen de la boca*/
+.banner .logo h1::before {
+    content: ""; /* Necesario para que se muestre el pseudo-elemento */
+    display: inline-block;
+    width: 50px; /* Ancho de la imagen */
+    height: 30px; /* Alto de la imagen */
+    background-image: url(/img/boca.png); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+   
+}
+
+.banner .menu {
+    text-align: right;
+}
+
+/* Estilo para los enlaces del menú ("Nosotros", "Diccionario", "Contacto") */
+.banner .menu a {
+    font-size: 1.3em; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace la letra más gruesa */
+    color: rgb(255, 255, 255); /* Asegura que el color sea visible */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Agrega un poco de sombra para resaltar */
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 15px; /* Aumenta el espacio entre los enlaces */
+}
+
+.banner .menu a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+    color: #007BFF; /* Cambia el color al pasar el mouse (opcional) */
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2.0em;
+    margin: 20px 0;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(245, 249, 185, 0.683);
+}
+
+
+
