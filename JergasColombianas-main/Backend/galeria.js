@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero-with-overlay');
 
     const images = [
-        'img/unoCarru.jpeg',
-        'img/dosCarru.jpg', 
-        'img/tresCarru.jpg',
-        'img/cuatCarru.png',
-        'img/cincCarru.jpeg'
+        '/JergasColombianas-main/img/unoCarru.jpeg',
+        '/JergasColombianas-main/img/dosCarru.jpg', 
+        '/JergasColombianas-main/img/tresCarru.jpg',
+        '/JergasColombianas-main/img/cuatCarru.png',
+        '/JergasColombianas-main/img/cincCarru.jpeg'
     ];
     
     function setRandomBackgroundImage() {

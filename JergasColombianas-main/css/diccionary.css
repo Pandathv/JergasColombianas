@@ -43,7 +43,7 @@
     .titulo {
         text-align: center;
         /*Esto es para que el texto se alinee al centro*/
-        font-size: normal;
+        font-size: 3em;
         /*Tamaño del texto*/
         font-weight: 200;
         /*Esto es para que el texto no sea tan grueso*/
@@ -60,7 +60,7 @@
     .subtitulo {
         text-align: center;
         /*Esto es para que el texto se alinee al centro*/
-        font-size: normal;
+        font-size: 1.5em;
         /*Tamaño del texto*/
         font-weight: 200;
         /*Esto es para que el texto no sea tan grueso*/
@@ -198,7 +198,7 @@
         /*Esto es para que el texto se ajuste a la tarjeta*/
         width: 70%;
         /*Ancho del boton*/
-        height: 70%;
+        height: 50%;
         /*Alto del boton*/
         background: rgb(117, 49, 49);
         /*Color del boton*/
@@ -208,7 +208,7 @@
         /*Esto es para que no tenga borde*/
         border-radius: 5px;
         /*Esto es para que las esquinas del boton sean redondeadas*/
-        margin: 10px auto;
+        margin: 20px auto;
         /*Espacio entre el texto y el boton*/
         cursor: pointer;
         /*Este permite cambiar la flecha por una manita en referencia boton*/

@@ -10,6 +10,17 @@
     overflow: hidden;
 }
 
+.galer-contaner{
+    width: 100%;
+    /* Ancho del contenedor */
+    height: 50vw;
+    /* Alto del contenedor */
+    position: relative;
+    /* Necesario para posicionar los elementos hijos */
+    overflow: hidden;
+    /* Asegura que los elementos que se muevan no se salgan */
+}
+
 .destacadas .titulo-slider {
     text-align: center;
     margin-bottom: 30px;
@@ -77,7 +88,7 @@
     left: 100px;
     width: 300px;
     text-align: left;
-    color: #ADD8E6;
+    color: #f1c40f;
     transform: translate(0, -50%);
     font-family: "winky sans", sans-serif;
     display: none;

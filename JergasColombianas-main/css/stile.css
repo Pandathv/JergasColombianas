@@ -22,7 +22,7 @@ a {
 
 .banner {
     position: relative; /* Necesario para posicionar el pseudo-elemento */
-    background-image: url('/img/banderaColombia.jpeg');
+    background-image: url('/JergasColombianas-main/img/banderaColombia.jpeg');
     background-size: cover;  /* Asegura que la imagen cubra todo el banner */
 
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ a {
     display: inline-block;
     width: 50px; /* Ancho de la imagen */
     height: 30px; /* Alto de la imagen */
-    background-image: url(/img/boca.png); /* Ruta de la imagen */
+    background-image: url(/JergasColombianas-main/img/boca.png); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
     margin-right: 5px; /* Espacio entre la imagen y el texto */

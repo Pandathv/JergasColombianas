@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Háblamelo</title>
-    <script src="https://kit.fontawesome.com/16bf2b39ba.js" crossorigin="anonymous"></script>
     <link rel="icon" type="img/jpg" href="img/icon.jpg">
-    <link rel="stylesheet" href="/css/footer.css">
-     <link rel="stylesheet" href="/css/stile.css">
-    <link rel="stylesheet" href="/css/diccionary.css">
+    <script src="https://kit.fontawesome.com/16bf2b39ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/JergasColombianas-main/css/sugerencias.css">
+    <link rel="stylesheet" href="/JergasColombianas-main/css/!main.css">
+    <link rel="stylesheet" href="/JergasColombianas-main/css/footer.css">
+    <link rel="stylesheet" href="/JergasColombianas-main/css/stile.css">
+    <link rel="stylesheet" href="/JergasColombianas-main/css/diccionary.css">
 </head>
 
 <body>
@@ -28,63 +31,38 @@
                 <a href="sugerencias.html">Sugerencias</a>
             </div>
         </div>
-         <!-- Buscador grande -->
-                <div class="big-search">
-                    <input type="text" placeholder="Buscar palabras colombianas..." class="big-search-input">
-                    <button class="big-search-button">Buscar</button>
-                </div>
-            </div>
+
     </header>
-    <div class="banner2">
-        <h1 class="titulo">Jergas</h1>
-        <p class="subtitulo">¿No sabes qué te dijeron y te sientes más perdido que gringo en buseta? 
-            <br>Entra, aprende, y salís hablando fino.</p>
-    </div>
-    <div class="container">
-        <!-- Tarjeta 1 -->
-        <div class="card">
-            <div class="face front">
-                <img src="img/chimba.jpeg" alt="Chimba" width="200" height="auto">
-                <h2 class="name">Chimba</h2>
-            </div>
-            <div class="face back">
-                <p class="description">Una palabra muy colombiana que puede significar algo increíble o genial.</p>
-                <p class="example">Ejemplo: "¡Qué chimba de fiesta!"</p>
-                <a href="https://www.youtube.com/watch?v=ue9vBU0bjA4" target="_blank">
-                    <button class="button-class">Conoce más</button>
-                </a>
-            </div>
+    <section class="sugerencias">
+        <div class="sugerencias-contenido">
+            <img src="/JergasColombianas-main/img/rodolfo-hernandez-voto.png" alt="Rodolfo" class="imagen">
+            <h2>¿Tienes una jerga colombiana para compartir?</h2>
+            <p>Ayúdanos a enriquecer nuestro diccionario con tus aportes.</p>
         </div>
-        <!-- Tarjeta 2 -->
-        <div class="card">
-            <div class="face front">
-                <img src="img/mecato.jpg" alt="Mecato" width="200" height="auto">
-                <h2 class="name">Mecato</h2>
-            </div>
-            <div class="face back">
-                <p class="description">Se refiere a golosinas o snacks en Colombia.</p>
-                <p class="example">Ejemplo: "Voy a comprar mecato para la película."</p>
-                <a href="https://www.youtube.com/watch?v=ue9vBU0bjA4" target="_blank">
-                    <button class="button-class">Conoce más</button>
-                </a>
-            </div>
+
+        <form id="form-sugerencia" aria-labelledby="form-title">
+            <h2 id="form-title" style="display:none;">Formulario para sugerir una jerga colombiana</h2>
+            <label for="nombre">Tu nombre (opcional):</label>
+            <input type="text" id="nombre" name="nombre" aria-label="Tu nombre, opcional">
+
+            <label for="jerga">Jerga colombiana:</label>
+            <textarea id="jerga" name="jerga" required aria-required="true" aria-label="Jerga colombiana"></textarea>
+
+            <label for="significado">Significado / contexto:</label>
+            <textarea id="significado" name="significado" required aria-required="true" aria-label="Significado o contexto"></textarea>
+
+            <input type="submit" value="Enviar sugerencia" aria-label="Enviar sugerencia">
+        </form>
+
+        <div id="mensaje-confirmacion" aria-live="polite" style="display: none; text-align: center; padding: 2rem; background-color: #d4edda; color: #155724; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+            <h3>¡Gracias por tu sugerencia!</h3>
+            <p>La hemos recibido y será revisada para su posible inclusión.</p>
         </div>
-        <!-- Tarjeta 3 -->
-        <div class="card">
-            <div class="face front">
-                <img src="img/ñero.jpg" alt="Ñero" width="200" height="auto">
-                <h2 class="name">Ñero</h2>
-            </div>
-            <div class="face back">
-                <p class="description">Término coloquial para referirse a un amigo o compañero.</p>
-                <p class="example">Ejemplo: "¿Qué más, ñero? ¿Todo bien?"</p>
-                <a href="https://www.youtube.com/watch?v=ue9vBU0bjA4" target="_blank">
-                    <button class="button-class">Conoce más</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
+
+    </section>
+    <script src="/JergasColombianas-main/Backend/sugerencias.js"></script>
+
+     <footer class="footer">
         <div class="footer-content">
             <!--Recomendacion de diccionario-->
             <div class="footer-section">
@@ -130,8 +108,6 @@
             <p>&copy; 2025 Háblamelo - El Diccionario del Parche Colombiano. Todos los derechos reservados.</p>
             <a href="#top" class="mobile-back-to-top back-to-top">Volver arriba ↑</a>
         </div>
-
     </footer>
 </body>
-
 </html>
